@@ -1,54 +1,69 @@
-# Guess-the-number
-# 🎲 Guess the Number (Tkinter Game)
+# 🎲 Guess-the-Number (Tkinter Game)
 
-Μια απλή εφαρμογή desktop παιχνιδιού με GUI φτιαγμένη με Python και `tkinter`, όπου προσπαθείς να μαντέψεις τον αριθμό που επιλέγεται τυχαία από τον υπολογιστή.
+A simple desktop game with a GUI built using Python and `tkinter`, where you try to guess the number randomly selected by the computer.
 
-## 🖥️ Περιγραφή
+---
 
-Το "Guess the Number" είναι ένα παιχνίδι όπου ο παίκτης προσπαθεί να μαντέψει έναν τυχαίο αριθμό σε όσο το δυνατόν λιγότερες προσπάθειες. Το εύρος του αριθμού επιλέγεται από τον παίκτη στην αρχή του παιχνιδιού μέσω radio buttons:
+## 🖥️ Description
 
-- **Easy**: 0–50  
-- **Medium**: 0–100  
-- **Hard**: 0–200
+**Guess the Number** is a game where the player tries to guess a randomly selected number in as few attempts as possible. The number range is chosen by the player at the beginning of the game using radio buttons:
 
-Με κάθε προσπάθεια, εμφανίζεται ένα εικονίδιο που δείχνει αν ο αριθμός που δόθηκε είναι μικρότερος, μεγαλύτερος ή σωστός.
+- 🟢 **Easy**: 0–50  
+- 🟡 **Medium**: 0–100  
+- 🔴 **Hard**: 0–200
 
-## 📦 Απαιτήσεις
+With each attempt, an icon is displayed to show whether the guessed number is too low, too high, or correct.
+
+---
+
+## 📦 Requirements
 
 - Python 3.x
-- Αρχεία εικόνας: `uparrow.png`, `downarrow.png`, `correct.png`, `dice.png`
-- Βιβλιοθήκες:
-  - `tkinter` (περιλαμβάνεται με το Python)
+- Image files:
+  - `uparrow.png`
+  - `downarrow.png`
+  - `correct.png`
+  - `dice.png`
+- Built-in libraries:
+  - `tkinter`
   - `random`
   - `os`, `sys`
 
-## ▶️ Εκτέλεση
+---
 
-1. Βεβαιώσου ότι τα παρακάτω αρχεία εικόνας βρίσκονται στον ίδιο φάκελο με το script:
+## ▶️ How to Run
+
+1. Make sure the following image files are in the **same folder** as the script:
     - `uparrow.png`
     - `downarrow.png`
     - `correct.png`
     - `dice.png`
 
-2. Τρέξε το πρόγραμμα:
+2. Run the program:
 
 ```bash
 python guess_the_number.py
-Επίλεξε επίπεδο δυσκολίας και πάτησε το κουμπί Randomize για να ξεκινήσει ο γύρος.
+Instructions:
 
-Πληκτρολόγησε έναν αριθμό και πάτησε Enter.
+Select a difficulty level and click Randomize to start the game.
 
-Δες αν ο αριθμός σου είναι σωστός ή αν πρέπει να προσπαθήσεις ξανά!
+Enter a number and press Enter.
+
+See whether your guess is correct or if you need to try again!
 
 📸 Screenshots
-Συμπεριλάβετε εικόνες από το UI εδώ για να δείξετε πώς φαίνεται το παιχνίδι.
+Include screenshots of the UI here to show what the game looks like.
 
-💡 Σημειώσεις
-Η εφαρμογή μπορεί να πακεταριστεί με PyInstaller για δημιουργία εκτελέσιμου .exe.
+markdown
+Αντιγραφή
+Επεξεργασία
+![Screenshot](screenshot1.png)
+![Screenshot](screenshot2.png)
+💡 Notes
+The app can be bundled as a standalone .exe using PyInstaller.
 
-Η συνάρτηση resource_path() υποστηρίζει τη χρήση αυτών των εικόνων και σε compiled μορφή (.exe).
+The resource_path() function supports using image files even in a compiled executable version.
 
-📜 Άδεια
-Αυτό το έργο είναι ελεύθερο για χρήση, τροποποίηση και διανομή.
-
-Καλή διασκέδαση με το παιχνίδι και καλή τύχη στο μάντεμα! 🎉
+📜 License
+This project is free to use, modify, and distribute.
+Enjoy the game and good luck guessing! 🎉
